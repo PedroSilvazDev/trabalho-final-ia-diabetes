@@ -118,14 +118,14 @@ Esse comando:
 - Python 3.10 ou superior
 - Git
 - Conexão com a internet
+- 
 ### Windows (PowerShell)
-powershell
 git clone https://github.com/PedroSilvazDev/trabalho-final-ia-diabetes.git
 cd trabalho-final-ia-diabetes
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
-python main.py```
+python main.py
 
 ## Modelos treinados
 

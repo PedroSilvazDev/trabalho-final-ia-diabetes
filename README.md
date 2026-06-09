@@ -189,13 +189,3 @@ trabalho-final-ia-diabetes/
 ├── requirements.txt
 └── README.md
 ```
-
-## PDF do trabalho
-
-Gere o PDF com o conteúdo principal deste README (incluindo gráficos) e salve em `docs/relatorio.pdf`.
-
-Sugestão no Windows:
-
-1. Abra o README no VS Code/Cursor.
-2. Use uma extensão de exportação para PDF **ou**
-3. Copie o conteúdo para o Word/Google Docs, insira as imagens de `outputs/figures/` e exporte para PDF.

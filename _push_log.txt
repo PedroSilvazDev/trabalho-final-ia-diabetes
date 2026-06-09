@@ -1,0 +1,82 @@
+﻿
+[16:36:44] === Push para GitHub ===
+[16:36:45] Remote origin atualizado.
+[16:36:45] Adicionando arquivos...
+[16:36:45] warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it
+[16:36:45] warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+[16:36:45] warning: in the working copy of 'docs/GERAR_PDF.md', LF will be replaced by CRLF the next time Git touches it
+[16:36:45] warning: in the working copy of 'main.py', LF will be replaced by CRLF the next time Git touches it
+[16:36:45] warning: in the working copy of 'push-github.ps1', LF will be replaced by CRLF the next time Git touches it
+[16:36:45] warning: in the working copy of 'requirements.txt', LF will be replaced by CRLF the next time Git touches it
+[16:36:45] warning: in the working copy of 'run.ps1', LF will be replaced by CRLF the next time Git touches it
+[16:36:45] warning: in the working copy of 'scripts/download_data.py', LF will be replaced by CRLF the next time Git touches it
+[16:36:45] warning: in the working copy of 'src/config.py', LF will be replaced by CRLF the next time Git touches it
+[16:36:45] warning: in the working copy of 'src/data_loader.py', LF will be replaced by CRLF the next time Git touches it
+[16:36:45] warning: in the working copy of 'src/evaluate.py', LF will be replaced by CRLF the next time Git touches it
+[16:36:45] warning: in the working copy of 'src/predict.py', LF will be replaced by CRLF the next time Git touches it
+[16:36:45] warning: in the working copy of 'src/preprocess.py', LF will be replaced by CRLF the next time Git touches it
+[16:36:45] warning: in the working copy of 'src/train.py', LF will be replaced by CRLF the next time Git touches it
+[16:36:45] error: open("_push_log.txt"): Permission denied
+[16:36:45] error: unable to index file '_push_log.txt'
+[16:36:45] fatal: adding files failed
+[16:36:45] Criando commit...
+[16:36:45] On branch main
+[16:36:45] Your branch is up to date with 'origin/main'.
+[16:36:45] 
+[16:36:45] Changes not staged for commit:
+[16:36:45]   (use "git add <file>..." to update what will be committed)
+[16:36:45]   (use "git restore <file>..." to discard changes in working directory)
+[16:36:45] 	modified:   README.md
+[16:36:45] 	modified:   requirements.txt
+[16:36:45] 	modified:   src/config.py
+[16:36:45] 
+[16:36:45] Untracked files:
+[16:36:45]   (use "git add <file>..." to include in what will be committed)
+[16:36:45] 	_push_log.txt
+[16:36:45] 	docs/relatorio.html
+[16:36:45] 	docs/relatorio.pdf
+[16:36:45] 	docs/relatorio_completo.md
+[16:36:45] 	gerar-pdf.ps1
+[16:36:45] 	regen-pdf.bat
+[16:36:45] 	scripts/gerar_relatorio.py
+[16:36:45] 	subir-github.ps1
+[16:36:45] 
+[16:36:45] no changes added to commit (use "git add" and/or "git commit -a")
+[16:36:45] HASH: e09033a
+[16:36:45] Arquivos no commit:
+[16:36:45]   .gitignore
+[16:36:45]   README.md
+[16:36:45]   data/.gitkeep
+[16:36:45]   data/diabetes.csv
+[16:36:45]   docs/GERAR_PDF.md
+[16:36:45]   main.py
+[16:36:45]   models/.gitkeep
+[16:36:45]   models/knn_model.joblib
+[16:36:45]   models/svm_model.joblib
+[16:36:45]   outputs/conclusao.json
+[16:36:45]   outputs/figures/.gitkeep
+[16:36:45]   outputs/figures/comparacao_metricas.png
+[16:36:45]   outputs/figures/curvas_roc.png
+[16:36:45]   outputs/figures/knn_busca_k.png
+[16:36:45]   outputs/figures/matriz_confusao_knn.png
+[16:36:45]   outputs/figures/matriz_confusao_svm.png
+[16:36:45]   outputs/metricas_comparacao.csv
+[16:36:45]   outputs/metricas_comparacao.json
+[16:36:45]   outputs/relatorio_knn.txt
+[16:36:45]   outputs/relatorio_svm.txt
+[16:36:46]   push-github.ps1
+[16:36:46]   requirements.txt
+[16:36:46]   run.ps1
+[16:36:46]   scripts/download_data.py
+[16:36:46]   src/__init__.py
+[16:36:46]   src/config.py
+[16:36:46]   src/data_loader.py
+[16:36:46]   src/evaluate.py
+[16:36:46]   src/predict.py
+[16:36:46]   src/preprocess.py
+[16:36:46]   src/train.py
+[16:36:46] Enviando para GitHub...
+[16:36:47] Everything up-to-date
+[16:36:47] branch 'main' set up to track 'origin/main'.
+[16:36:47] EXIT_PUSH: 0
+[16:36:47] SUCESSO: https://github.com/PedroSilvazDev/trabalho-final-ia-diabetes

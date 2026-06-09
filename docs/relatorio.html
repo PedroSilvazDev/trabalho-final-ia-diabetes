@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Trabalho Final IA - Diabetes</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; line-height: 1.6; color: #222; }
+    h1 { font-size: 1.4em; border-bottom: 2px solid #2c3e50; padding-bottom: 8px; }
+    h2 { font-size: 1.15em; color: #2c3e50; margin-top: 28px; }
+    table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 0.95em; }
+    th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+    th { background: #34495e; color: white; }
+    tr:nth-child(even) { background: #f8f9fa; }
+    img { max-width: 100%; margin: 12px 0; border: 1px solid #ddd; }
+    .header { font-size: 0.95em; margin-bottom: 20px; }
+    ul { margin: 8px 0; }
+    @media print { body { margin: 20px; } }
+  </style>
+</head>
+<body>
+
+<p class="header">Disciplina de Inteligência Artificial , Professor Munif , Unicesumar 2026</p>
+
+<h1>Trabalho Final - Predição de Diabetes (Pima Indians)</h1>
+
+<h2>Integrantes</h2>
+<ul>
+  <li>Pedro Henrique da Silva - RA: 23021607-2</li>
+  <li>Victor Hugo Rodrigues de Oliveira - RA: 23418156-2</li>
+  <li>Victor Hungo Silva Garcia - RA: 23030968-2</li>
+</ul>
+
+<h2>Contextualização</h2>
+<p>O diabetes mellitus é uma doença crônica que afeta milhões de pessoas no mundo. A detecção precoce é fundamental para reduzir complicações e melhorar a qualidade de vida dos pacientes. Com o avanço da Inteligência Artificial, modelos de aprendizado de máquina podem apoiar a identificação de padrões em dados clínicos e auxiliar profissionais de saúde na triagem de risco.</p>
+
+<h2>Problema investigado</h2>
+<p>Este trabalho investiga se é possível prever a presença de diabetes em pacientes da etnia Pima Indians com base em variáveis clínicas e demográficas, como glicose, pressão arterial, IMC e idade.</p>
+
+<h2>Hipótese</h2>
+<p>Modelos de classificação supervisionada conseguem distinguir pacientes com e sem diabetes a partir dos atributos disponíveis. Espera-se que o SVM apresente bom desempenho após a padronização dos dados, enquanto o KNN pode ser sensível à escolha do número de vizinhos e à distribuição das classes.</p>
+
+<h2>Dataset utilizado</h2>
+<table>
+  <tr><th>Item</th><th>Descrição</th></tr>
+  <tr><td>Nome</td><td>Pima Indians Diabetes Database</td></tr>
+  <tr><td>Origem</td><td>Kaggle / UCI Machine Learning Repository</td></tr>
+  <tr><td>Registros</td><td>768 amostras</td></tr>
+  <tr><td>Atributos</td><td>8 variáveis numéricas</td></tr>
+  <tr><td>Variável alvo</td><td>Outcome (0 = sem diabetes, 1 = com diabetes)</td></tr>
+</table>
+<p><strong>Atributos:</strong> Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction e Age.</p>
+
+<h2>Preparação dos dados</h2>
+<ul>
+  <li>Substituição de zeros inválidos por valores ausentes nas variáveis clínicas.</li>
+  <li>Imputação de valores ausentes pela mediana.</li>
+  <li>Padronização com StandardScaler.</li>
+  <li>Divisão estratificada em treino (80%) e teste (20%).</li>
+</ul>
+
+<h2>Métodos de IA utilizados</h2>
+<table>
+  <tr><th>Parte</th><th>Algoritmo</th><th>Detalhes</th></tr>
+  <tr><td>Parte 1</td><td>KNN</td><td>k-Nearest Neighbors, melhor k = 13</td></tr>
+  <tr><td>Parte 2</td><td>SVM</td><td>kernel linear, C = 1, gamma = scale</td></tr>
+</table>
+<p>Ambos os modelos foram treinados com validação cruzada estratificada (5 folds).</p>
+
+<h2>Avaliação dos modelos</h2>
+<p>Métricas: acurácia, precisão, revocação, F1-score e ROC-AUC.</p>
+<table>
+  <tr><th>Modelo</th><th>Acurácia</th><th>Precisão</th><th>Revocação</th><th>F1</th><th>ROC-AUC</th></tr>
+  <tr><td>KNN (k=13)</td><td>71,4%</td><td>60,9%</td><td>51,9%</td><td>0,56</td><td>0,79</td></tr>
+  <tr><td>SVM (linear)</td><td>70,1%</td><td>59,1%</td><td>48,1%</td><td>0,53</td><td>0,81</td></tr>
+</table>
+
+<h2>Gráficos de avaliação</h2>
+<p><em>Execute <code>python main.py</code> antes de gerar o PDF para exibir os gráficos.</em></p>
+
+<p><strong>Matriz de confusão - KNN</strong></p>
+<img src="../outputs/figures/matriz_confusao_knn.png" alt="Matriz KNN">
+
+<p><strong>Matriz de confusão - SVM</strong></p>
+<img src="../outputs/figures/matriz_confusao_svm.png" alt="Matriz SVM">
+
+<p><strong>Busca do melhor k no KNN</strong></p>
+<img src="../outputs/figures/knn_busca_k.png" alt="Busca k">
+
+<p><strong>Comparação de métricas</strong></p>
+<img src="../outputs/figures/comparacao_metricas.png" alt="Comparação">
+
+<p><strong>Curvas ROC</strong></p>
+<img src="../outputs/figures/curvas_roc.png" alt="ROC">
+
+<h2>Comparação dos resultados</h2>
+<p>O modelo com melhor desempenho geral foi o <strong>KNN</strong>, considerando F1-score (0,56 vs 0,53) e acurácia (71,4% vs 70,1%). O SVM apresentou ROC-AUC ligeiramente superior (0,81 vs 0,79).</p>
+<p>O KNN obteve melhor revocação; o SVM teve desempenho equilibrado com kernel linear (C=1).</p>
+
+<h2>Conclusão</h2>
+<p>O projeto demonstra o fluxo completo de uma solução de IA: definição do problema, preparação dos dados, treinamento, avaliação e comparação entre modelos. Ambos os algoritmos classificam diabetes com desempenho razoável, com leve vantagem do KNN nas métricas principais. Limitações: dataset pequeno e desbalanceamento de classes.</p>
+
+</body>
+</html>

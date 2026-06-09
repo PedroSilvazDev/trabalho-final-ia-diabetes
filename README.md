@@ -121,10 +121,15 @@ Esse comando:
 - 
 ### Windows (PowerShell)
 git clone https://github.com/PedroSilvazDev/trabalho-final-ia-diabetes.git
+
 cd trabalho-final-ia-diabetes
+
 python -m venv .venv
+
 .\.venv\Scripts\Activate.ps1
+
 pip install -r requirements.txt
+
 python main.py
 
 ## Modelos treinados

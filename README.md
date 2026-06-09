@@ -117,8 +117,7 @@ Esse comando:
 ### Requisitos
 - Python 3.10 ou superior
 - Git
-- Conexão com a internet
-- 
+  
 ### Windows (PowerShell)
 git clone https://github.com/PedroSilvazDev/trabalho-final-ia-diabetes.git
 

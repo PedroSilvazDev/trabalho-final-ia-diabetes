@@ -113,6 +113,20 @@ Esse comando:
 - gera métricas em `outputs/`;
 - gera gráficos em `outputs/figures/`.
 
+## Como executar em outro computador
+### Requisitos
+- Python 3.10 ou superior
+- Git
+- Conexão com a internet
+### Windows (PowerShell)
+```powershell
+git clone https://github.com/PedroSilvazDev/trabalho-final-ia-diabetes.git
+cd trabalho-final-ia-diabetes
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+python main.py
+
 ## Modelos treinados
 
 Após executar `python main.py`, os modelos ficam disponíveis em:
